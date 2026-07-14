@@ -24,23 +24,24 @@ A methodological **reproducibility study** of large language models (LLMs) used 
 - **Prompt wording** shifted absolute scores modestly (≤ ~0.33 on the 1–5 scale) while **preserving report rankings** (Kendall's W 0.86–0.95).
 - **Inter-model agreement was only moderate** (weighted κ 0.67–0.80; exact 41–61%) — judges are not interchangeable.
 
-See `supplementary_reproducibility.md` for full numbers, exact settings, and definitions.
+Full numbers, exact model snapshots/dates/parameters, and statistical definitions are in the paper's Supplementary Material.
 
 ## Repository layout
 
 ```
 config.yaml                     # all frozen run parameters (judges, conditions, seed)
+requirements.txt
 prompts/                        # system, rubric (+reversed), few-shot, v1–v5
 schemas/score.schema.json       # judge output schema (5 items, 1–5)
-src/                            # pipeline
-  perturbation_engine.py         #   section-aware perturbations
-  dataset_builder.py             #   Open-i fetch/parse/perturb -> reports.jsonl
-  llm_client.py                  #   provider-agnostic client (retry, cache, logging)
-  judge_runner.py                #   orchestrates C1–C3
-  response_parser.py             #   JSON + regex-fallback parser
-  analysis/                      #   reliability, variance, effects, intermodel, figures
-serve/                          # self-hosting Qwen (vLLM) on AMD/Vast + runbooks
-tools/merge_qwen_results.py     # offline merge of self-hosted results into scores.parquet
+src/
+  perturbation_engine.py         # section-aware perturbations
+  dataset_builder.py             # Open-i fetch/parse/perturb -> reports.jsonl
+  llm_client.py                  # provider-agnostic client (retry, cache, logging)
+  judge_runner.py                # orchestrates C1–C3
+  response_parser.py             # JSON + regex-fallback parser
+  analysis/                      # _common, reliability, variance, effects, intermodel, run_all
+data/reports.jsonl              # 100 perturbed reports (id, source, perturbation, text)
+data/metadata.csv               # per-report perturbation family/intensity/operations
 runs/scores.parquet             # aggregated per-call scores (32,000 rows)
 ```
 
@@ -49,26 +50,28 @@ runs/scores.parquet             # aggregated per-call scores (32,000 rows)
 ```bash
 pip install -r requirements.txt
 
-# 1) build the report set (run locally; Open-i download)
+# 1) build the report set (run on a machine with internet; Open-i download)
 python src/dataset_builder.py --download --n 100
 
-# 2) score (set provider API keys; Qwen via a self-hosted OpenAI-compatible endpoint)
-#    self-hosting: see serve/README_vast.md or serve/README_amd.md
+# 2) score all four judges
+#    - closed judges: set ANTHROPIC_API_KEY / OPENAI_API_KEY / GOOGLE_API_KEY
+#    - Qwen 3.5: serve the weights with any vLLM (>=0.17) OpenAI-compatible endpoint,
+#      then point the client at it via QWEN_BASE_URL (default http://localhost:8000/v1)
 python -c "import sys;sys.path.insert(0,'src');import judge_runner;judge_runner.run()"
 
-# 3) analysis + figures
+# 3) analysis -> outputs/tables/*.csv
 PYTHONPATH=src/analysis python src/analysis/run_all.py
-PYTHONPATH=src/analysis python src/analysis/make_figures.py
 ```
 
-Reproducibility details (exact model snapshots, dates, parameters, software versions, prompts, schema, parsing rules) are in **`supplementary_reproducibility.md`**.
+The provided `runs/scores.parquet` reproduces every table without re-running the models
+(`PYTHONPATH=src/analysis python src/analysis/run_all.py`).
 
 ## Data & code availability
 
 - **Code:** this repository (MIT License, see `LICENSE`).
 - **Aggregated scores:** `runs/scores.parquet` (per-call parsed scores). Raw model outputs are shared subject to provider terms.
 - **Source reports:** public Open-i / Indiana University CXR collection (used within its terms). Raw dumps are not redistributed here; regenerate with `dataset_builder.py`.
-- An archival release (with data) will be minted as a Zenodo DOI from a tagged GitHub release.
+- An archival release will be minted as a Zenodo DOI from a tagged GitHub release.
 
 ## Citation
 
