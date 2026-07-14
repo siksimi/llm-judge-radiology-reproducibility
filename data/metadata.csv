@@ -1,0 +1,101 @@
+id,uid,perturbation_type,intensity,operations
+uId:CXR3070_orig,uId:CXR3070,none,0,
+uId:CXR2726_orig,uId:CXR2726,none,0,
+uId:CXR959_orig,uId:CXR959,none,0,
+uId:CXR251_orig,uId:CXR251,none,0,
+uId:CXR28_orig,uId:CXR28,none,0,
+uId:CXR395_orig,uId:CXR395,none,0,
+uId:CXR2968_orig,uId:CXR2968,none,0,
+uId:CXR1188_orig,uId:CXR1188,none,0,
+uId:CXR3493_orig,uId:CXR3493,none,0,
+uId:CXR493_orig,uId:CXR493,none,0,
+uId:CXR3412_orig,uId:CXR3412,none,0,
+uId:CXR3671_orig,uId:CXR3671,none,0,
+uId:CXR1706_orig,uId:CXR1706,none,0,
+uId:CXR512_orig,uId:CXR512,none,0,
+uId:CXR918_orig,uId:CXR918,none,0,
+uId:CXR38_orig,uId:CXR38,none,0,
+uId:CXR3681_orig,uId:CXR3681,none,0,
+uId:CXR3860_orig,uId:CXR3860,none,0,
+uId:CXR3005_orig,uId:CXR3005,none,0,
+uId:CXR3422_orig,uId:CXR3422,none,0,
+uId:CXR787_orig,uId:CXR787,none,0,
+uId:CXR3788_orig,uId:CXR3788,none,0,
+uId:CXR1114_orig,uId:CXR1114,none,0,
+uId:CXR487_orig,uId:CXR487,none,0,
+uId:CXR2492_orig,uId:CXR2492,none,0,
+uId:CXR216_orig,uId:CXR216,none,0,
+uId:CXR2588_orig,uId:CXR2588,none,0,
+uId:CXR2474_orig,uId:CXR2474,none,0,
+uId:CXR1646_orig,uId:CXR1646,none,0,
+uId:CXR1763_orig,uId:CXR1763,none,0,
+uId:CXR2648_laterality_measure_i1,uId:CXR2648,laterality_measure,1,laterality[FINDINGS]:Right->Left
+uId:CXR1926_hallucinated_finding_i2,uId:CXR1926,hallucinated_finding,2,inject[FINDINGS]@1:'Patchy airspace opacity in the left lower lobe suggests pneumonia.'; inject[FINDINGS]@1:'There is a small left pleural effusion.'
+uId:CXR3327_finding_omission_i3,uId:CXR3327,finding_omission,3,"omit[FINDINGS]_idx=[0, 2, 3]"
+uId:CXR1148_hallucinated_finding_i3,uId:CXR1148,hallucinated_finding,3,inject[FINDINGS]@3:'A subtle nodular opacity is seen in the right upper lobe.'; inject[FINDINGS]@0:'A calcified granuloma is present in the right lung.'; inject[FINDINGS]@3:'There is a small left pleural effusion.'
+uId:CXR3013_laterality_measure_i2,uId:CXR3013,laterality_measure,2,laterality_measure_no_target_found
+uId:CXR2213_readability_i3,uId:CXR2213,readability,3,"shuffle[FINDINGS]=[4, 1, 2, 3, 0]; verbose[FINDINGS]@4:'As can be appreciated upon careful review,'; verbose[FINDINGS]@0:'As can be appreciated upon careful review,'; verbose[FINDINGS]@4:'For the sake of completeness, it is worth mentioning that'"
+uId:CXR3335_hallucinated_finding_i1,uId:CXR3335,hallucinated_finding,1,inject[FINDINGS]@2:'A calcified granuloma is present in the right lung.'
+uId:CXR2408_laterality_measure_i3,uId:CXR2408,laterality_measure,3,laterality_measure_no_target_found
+uId:CXR3375_finding_omission_i1,uId:CXR3375,finding_omission,1,omit[FINDINGS]_idx=[2]
+uId:CXR1554_readability_i1,uId:CXR1554,readability,1,"shuffle[FINDINGS]=[1, 2, 3, 0]; verbose[FINDINGS]@2:'It should be noted that, generally speaking,'"
+uId:CXR131_finding_omission_i2,uId:CXR131,finding_omission,2,"omit[FINDINGS]_idx=[0, 4]"
+uId:CXR1043_readability_i2,uId:CXR1043,readability,2,"shuffle[FINDINGS]=[4, 1, 3, 2, 0]; verbose[FINDINGS]@2:'For the sake of completeness, it is worth mentioning that'; verbose[FINDINGS]@3:'It should be noted that, generally speaking,'"
+uId:CXR588_readability_i2,uId:CXR588,readability,2,"shuffle[FINDINGS]=[1, 2, 4, 3, 0]; verbose[FINDINGS]@1:'It should be noted that, generally speaking,'; verbose[FINDINGS]@0:'As can be appreciated upon careful review,'"
+uId:CXR3138_hallucinated_finding_i1,uId:CXR3138,hallucinated_finding,1,inject[FINDINGS]@4:'Patchy airspace opacity in the left lower lobe suggests pneumonia.'
+uId:CXR1808_finding_omission_i2,uId:CXR1808,finding_omission,2,"omit[FINDINGS]_idx=[0, 5]"
+uId:CXR415_laterality_measure_i3,uId:CXR415,laterality_measure,3,laterality_measure_no_target_found
+uId:CXR3310_finding_omission_i3,uId:CXR3310,finding_omission,3,"omit[FINDINGS]_idx=[1, 2, 3]"
+uId:CXR978_finding_omission_i1,uId:CXR978,finding_omission,1,omit[FINDINGS]_idx=[0]
+uId:CXR788_readability_i1,uId:CXR788,readability,1,"shuffle[FINDINGS]=[2, 0, 5, 4, 1, 3]; verbose[FINDINGS]@2:'For the sake of completeness, it is worth mentioning that'"
+uId:CXR2971_hallucinated_finding_i2,uId:CXR2971,hallucinated_finding,2,inject[FINDINGS]@1:'A subtle nodular opacity is seen in the right upper lobe.'; inject[FINDINGS]@3:'Mild cardiomegaly is noted.'
+uId:CXR1277_laterality_measure_i1,uId:CXR1277,laterality_measure,1,laterality[FINDINGS]:right->left
+uId:CXR88_laterality_measure_i2,uId:CXR88,laterality_measure,2,laterality_measure_no_target_found
+uId:CXR2579_hallucinated_finding_i3,uId:CXR2579,hallucinated_finding,3,inject[FINDINGS]@0:'There is a small left pleural effusion.'; inject[FINDINGS]@4:'Mild cardiomegaly is noted.'; inject[FINDINGS]@4:'A calcified granuloma is present in the right lung.'
+uId:CXR2247_readability_i3,uId:CXR2247,readability,3,"shuffle[FINDINGS]=[1, 2, 0]; verbose[FINDINGS]@0:'For the sake of completeness, it is worth mentioning that'; verbose[FINDINGS]@2:'For the sake of completeness, it is worth mentioning that'; verbose[FINDINGS]@1:'It should be noted that, generally speaking,'"
+uId:CXR3814_readability_i1,uId:CXR3814,readability,1,"shuffle[FINDINGS]=[0, 1, 2]; verbose[FINDINGS]@0:'It should be noted that, generally speaking,'"
+uId:CXR1877_finding_omission_i3,uId:CXR1877,finding_omission,3,"omit[FINDINGS]_idx=[0, 1, 3]"
+uId:CXR1875_hallucinated_finding_i3,uId:CXR1875,hallucinated_finding,3,inject[FINDINGS]@4:'Mild cardiomegaly is noted.'; inject[FINDINGS]@0:'A subtle nodular opacity is seen in the right upper lobe.'; inject[FINDINGS]@5:'A subtle nodular opacity is seen in the right upper lobe.'
+uId:CXR1060_readability_i2,uId:CXR1060,readability,2,"shuffle[FINDINGS]=[3, 1, 0, 2]; verbose[FINDINGS]@1:'It should be noted that, generally speaking,'; verbose[FINDINGS]@3:'For the sake of completeness, it is worth mentioning that'"
+uId:CXR939_finding_omission_i2,uId:CXR939,finding_omission,2,"omit[FINDINGS]_idx=[1, 3]"
+uId:CXR460_hallucinated_finding_i1,uId:CXR460,hallucinated_finding,1,inject[FINDINGS]@3:'Mild cardiomegaly is noted.'
+uId:CXR3989_laterality_measure_i3,uId:CXR3989,laterality_measure,3,laterality[FINDINGS]:Right->Left
+uId:CXR3356_readability_i3,uId:CXR3356,readability,3,"shuffle[FINDINGS]=[0, 3, 2, 1]; verbose[FINDINGS]@2:'It should be noted that, generally speaking,'; verbose[FINDINGS]@1:'For the sake of completeness, it is worth mentioning that'; verbose[FINDINGS]@3:'As can be appreciated upon careful review,'"
+uId:CXR3898_finding_omission_i1,uId:CXR3898,finding_omission,1,omit[FINDINGS]_idx=[1]
+uId:CXR2187_laterality_measure_i2,uId:CXR2187,laterality_measure,2,laterality[FINDINGS]:right->left
+uId:CXR2005_hallucinated_finding_i2,uId:CXR2005,hallucinated_finding,2,inject[FINDINGS]@1:'A calcified granuloma is present in the right lung.'; inject[FINDINGS]@0:'There is a small left pleural effusion.'
+uId:CXR3498_laterality_measure_i1,uId:CXR3498,laterality_measure,1,laterality[FINDINGS]:Right->Left
+uId:CXR2946_readability_i3,uId:CXR2946,readability,3,"shuffle[FINDINGS]=[3, 0, 1, 2]; verbose[FINDINGS]@3:'As can be appreciated upon careful review,'; verbose[FINDINGS]@3:'It should be noted that, generally speaking,'; verbose[FINDINGS]@1:'It should be noted that, generally speaking,'"
+uId:CXR3965_hallucinated_finding_i1,uId:CXR3965,hallucinated_finding,1,inject[FINDINGS]@1:'A subtle nodular opacity is seen in the right upper lobe.'
+uId:CXR75_hallucinated_finding_i3,uId:CXR75,hallucinated_finding,3,inject[FINDINGS]@3:'Mild cardiomegaly is noted.'; inject[FINDINGS]@4:'Patchy airspace opacity in the left lower lobe suggests pneumonia.'; inject[FINDINGS]@3:'A calcified granuloma is present in the right lung.'
+uId:CXR819_laterality_measure_i2,uId:CXR819,laterality_measure,2,laterality_measure_no_target_found
+uId:CXR3946_hallucinated_finding_i2,uId:CXR3946,hallucinated_finding,2,inject[FINDINGS]@2:'There is a small left pleural effusion.'; inject[FINDINGS]@7:'There is a small left pleural effusion.'
+uId:CXR849_finding_omission_i3,uId:CXR849,finding_omission,3,"omit[FINDINGS]_idx=[0, 1, 4]"
+uId:CXR1064_finding_omission_i2,uId:CXR1064,finding_omission,2,"omit[FINDINGS]_idx=[1, 2]"
+uId:CXR3155_readability_i1,uId:CXR3155,readability,1,"shuffle[FINDINGS]=[1, 0, 2]; verbose[FINDINGS]@0:'For the sake of completeness, it is worth mentioning that'"
+uId:CXR2413_laterality_measure_i3,uId:CXR2413,laterality_measure,3,laterality_measure_no_target_found
+uId:CXR208_finding_omission_i1,uId:CXR208,finding_omission,1,omit[FINDINGS]_idx=[5]
+uId:CXR336_readability_i2,uId:CXR336,readability,2,"shuffle[FINDINGS]=[0, 2, 3, 4, 1]; verbose[FINDINGS]@3:'It should be noted that, generally speaking,'; verbose[FINDINGS]@0:'It should be noted that, generally speaking,'"
+uId:CXR2963_laterality_measure_i1,uId:CXR2963,laterality_measure,1,laterality_measure_no_target_found
+uId:CXR3569_finding_omission_i1,uId:CXR3569,finding_omission,1,omit[FINDINGS]_idx=[3]
+uId:CXR507_hallucinated_finding_i1,uId:CXR507,hallucinated_finding,1,inject[FINDINGS]@2:'Patchy airspace opacity in the left lower lobe suggests pneumonia.'
+uId:CXR2148_hallucinated_finding_i2,uId:CXR2148,hallucinated_finding,2,inject[FINDINGS]@2:'Mild cardiomegaly is noted.'; inject[FINDINGS]@3:'There is a small left pleural effusion.'
+uId:CXR938_hallucinated_finding_i3,uId:CXR938,hallucinated_finding,3,inject[FINDINGS]@1:'Increased interstitial markings consistent with mild pulmonary edema.'; inject[FINDINGS]@2:'Mild cardiomegaly is noted.'; inject[FINDINGS]@2:'Mild cardiomegaly is noted.'
+uId:CXR3867_laterality_measure_i3,uId:CXR3867,laterality_measure,3,laterality_measure_no_target_found
+uId:CXR3658_readability_i1,uId:CXR3658,readability,1,"shuffle[FINDINGS]=[4, 6, 5, 1, 3, 0, 2]; verbose[FINDINGS]@4:'It should be noted that, generally speaking,'"
+uId:CXR3350_readability_i2,uId:CXR3350,readability,2,"shuffle[FINDINGS]=[3, 4, 1, 0, 2]; verbose[FINDINGS]@1:'It should be noted that, generally speaking,'; verbose[FINDINGS]@2:'For the sake of completeness, it is worth mentioning that'"
+uId:CXR1311_readability_i3,uId:CXR1311,readability,3,"shuffle[FINDINGS]=[2, 1, 3, 0]; verbose[FINDINGS]@1:'It should be noted that, generally speaking,'; verbose[FINDINGS]@3:'For the sake of completeness, it is worth mentioning that'; verbose[FINDINGS]@3:'It should be noted that, generally speaking,'"
+uId:CXR3632_finding_omission_i2,uId:CXR3632,finding_omission,2,"omit[FINDINGS]_idx=[3, 5]"
+uId:CXR2827_finding_omission_i3,uId:CXR2827,finding_omission,3,"omit[FINDINGS]_idx=[3, 6, 8]"
+uId:CXR777_laterality_measure_i1,uId:CXR777,laterality_measure,1,laterality_measure_no_target_found
+uId:CXR1905_laterality_measure_i2,uId:CXR1905,laterality_measure,2,laterality_measure_no_target_found
+uId:CXR1046_hallucinated_finding_i1,uId:CXR1046,hallucinated_finding,1,inject[FINDINGS]@1:'Increased interstitial markings consistent with mild pulmonary edema.'
+uId:CXR1822_finding_omission_i1,uId:CXR1822,finding_omission,1,omit[FINDINGS]_idx=[4]
+uId:CXR3298_readability_i1,uId:CXR3298,readability,1,"shuffle[FINDINGS]=[1, 2, 0]; verbose[FINDINGS]@2:'For the sake of completeness, it is worth mentioning that'"
+uId:CXR3391_finding_omission_i3,uId:CXR3391,finding_omission,3,"omit[FINDINGS]_idx=[0, 2, 3]"
+uId:CXR3362_finding_omission_i2,uId:CXR3362,finding_omission,2,"omit[FINDINGS]_idx=[0, 1]"
+uId:CXR2439_hallucinated_finding_i2,uId:CXR2439,hallucinated_finding,2,inject[FINDINGS]@0:'Mild cardiomegaly is noted.'; inject[FINDINGS]@3:'Patchy airspace opacity in the left lower lobe suggests pneumonia.'
+uId:CXR558_laterality_measure_i3,uId:CXR558,laterality_measure,3,laterality_measure_no_target_found
+uId:CXR2487_laterality_measure_i1,uId:CXR2487,laterality_measure,1,laterality_measure_no_target_found
+uId:CXR3243_readability_i2,uId:CXR3243,readability,2,"shuffle[FINDINGS]=[4, 5, 3, 0, 2, 1]; verbose[FINDINGS]@5:'It should be noted that, generally speaking,'; verbose[FINDINGS]@1:'It should be noted that, generally speaking,'"
+uId:CXR1318_hallucinated_finding_i3,uId:CXR1318,hallucinated_finding,3,inject[FINDINGS]@1:'Mild cardiomegaly is noted.'; inject[FINDINGS]@0:'Increased interstitial markings consistent with mild pulmonary edema.'; inject[FINDINGS]@3:'A calcified granuloma is present in the right lung.'

@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://yh2/score.schema.json",
+  "title": "LLM judge score output",
+  "description": "Structured 1-5 Likert scoring of a radiology report on five rubric items (Appendix B).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "finding_completeness",
+    "diagnostic_accuracy",
+    "clarity_structure",
+    "clinical_appropriateness",
+    "overall_global_quality"
+  ],
+  "properties": {
+    "finding_completeness":     { "$ref": "#/$defs/scoreItem" },
+    "diagnostic_accuracy":      { "$ref": "#/$defs/scoreItem" },
+    "clarity_structure":        { "$ref": "#/$defs/scoreItem" },
+    "clinical_appropriateness": { "$ref": "#/$defs/scoreItem" },
+    "overall_global_quality":   { "$ref": "#/$defs/scoreItem" },
+    "rationale": {
+      "type": "string",
+      "description": "Optional brief justification (not scored; for QC only).",
+      "maxLength": 1000
+    }
+  },
+  "$defs": {
+    "scoreItem": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5,
+      "description": "1 = poor, 5 = excellent (per Appendix B anchors)."
+    }
+  }
+}

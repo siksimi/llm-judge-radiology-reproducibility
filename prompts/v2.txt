@@ -1,0 +1,17 @@
+# VARIANT v2 — Criterion reordering (items presented in reversed order)
+# inject: {RUBRIC_BLOCK} = rubric_block_reversed.txt ; {REPORT} = report text
+# axis varied vs v1: item ORDER only (wording, labels, few-shot identical to v1)
+
+Evaluate the quality of the following chest radiograph report.
+
+{RUBRIC_BLOCK}
+
+Score each of the five items using the 1-5 scale above, applying the anchor definitions exactly. Rate overall_global_quality as an independent holistic judgment, not the average of the other items.
+
+REPORT:
+\"\"\"
+{REPORT}
+\"\"\"
+
+Return ONLY a JSON object with integer values for these keys:
+finding_completeness, diagnostic_accuracy, clarity_structure, clinical_appropriateness, overall_global_quality

@@ -1,0 +1,24 @@
+# VARIANT v4 — Scale-label variant (verbal labels added; mapping identical, 5=Excellent)
+# inject: {RUBRIC_BLOCK} = rubric_block.txt ; {REPORT} = report text
+# axis varied vs v1: SCALE LABELS only (order, wording, few-shot identical to v1)
+
+Evaluate the quality of the following chest radiograph report.
+
+Use this labeled 1-5 scale for every item (the mapping is unchanged; labels are added for guidance):
+  1 = Poor
+  2 = Fair
+  3 = Acceptable
+  4 = Good
+  5 = Excellent
+
+{RUBRIC_BLOCK}
+
+Score each of the five items using the labeled scale above, applying the anchor definitions exactly. Rate overall_global_quality as an independent holistic judgment, not the average of the other items.
+
+REPORT:
+\"\"\"
+{REPORT}
+\"\"\"
+
+Return ONLY a JSON object with integer values (1-5) for these keys:
+finding_completeness, diagnostic_accuracy, clarity_structure, clinical_appropriateness, overall_global_quality

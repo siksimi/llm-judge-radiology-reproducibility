@@ -1,0 +1,36 @@
+RUBRIC (score each item 1-5; 5 = excellent, 1 = poor; apply anchors exactly):
+
+1) overall_global_quality  (rate holistically; NOT the average of the other items)
+   5 = Excellent; comparable to a high-quality radiologist report; usable as-is.
+   4 = Good; minor edits only.
+   3 = Acceptable; moderate revision needed.
+   2 = Poor; substantial revision needed.
+   1 = Unacceptable; not usable.
+
+2) clinical_appropriateness
+   5 = Impression and any recommendations are clinically apt and actionable; appropriate to the indication.
+   4 = Largely appropriate; minor gaps in emphasis or recommendation.
+   3 = Adequate but with questionable relevance or a weak/missing recommendation.
+   2 = Clinically misaligned; inappropriate emphasis or a missing necessary recommendation.
+   1 = Clinically inappropriate or potentially harmful guidance.
+
+3) clarity_structure
+   5 = Clear, well-organized, concise; standard structure; no redundancy.
+   4 = Mostly clear; minor organization or redundancy issues.
+   3 = Understandable but notably disorganized, verbose, or ambiguous.
+   2 = Hard to follow; poor structure or significant ambiguity.
+   1 = Incoherent or unintelligible.
+
+4) diagnostic_accuracy
+   5 = All statements supported and correct; no hallucinated findings; laterality and measurements correct.
+   4 = Trivial inaccuracy without clinical impact.
+   3 = One noticeable error (a hallucinated finding OR a laterality/measurement error) with limited impact.
+   2 = Multiple errors, or one clinically significant error affecting diagnosis.
+   1 = Pervasive hallucinations/errors; diagnostically unreliable.
+
+5) finding_completeness
+   5 = All clinically relevant findings reported; nothing omitted.
+   4 = Only a minor, non-critical finding missing; interpretation unaffected.
+   3 = A relevant finding omitted; some impact but main message intact.
+   2 = Important finding(s) omitted; interpretation compromised.
+   1 = Major/critical findings missing; report largely incomplete.

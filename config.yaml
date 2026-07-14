@@ -1,0 +1,82 @@
+# =====================================================================
+# LLM-judge reliability & prompt-sensitivity study — central config
+# All run parameters are frozen here; version-control every change via git.
+# =====================================================================
+
+seed: 20260622                 # global RNG seed (perturbation generation & sampling)
+
+paths:
+  raw_reports: "data/raw"
+  perturbed: "data/perturbed"
+  reports_jsonl: "data/reports.jsonl"          # FULL 100 reports (pilot: data/reports_pilot.jsonl)
+  metadata_csv: "data/metadata.csv"
+  runs_dir: "runs"
+  outputs_dir: "outputs"
+
+# ----- data -----
+data:
+  primary_source: "open-i"
+  secondary_source: "mimic-cxr"
+  n_reports: 100
+  original_to_perturbed_ratio: [30, 70]
+  perturbation_families:
+    finding_omission:     { weight: 0.25, intensities: [1, 2, 3] }
+    hallucinated_finding: { weight: 0.25, intensities: [1, 2, 3] }
+    laterality_measure:   { weight: 0.25, intensities: [1, 2, 3] }
+    readability:          { weight: 0.25, intensities: [1, 2, 3] }
+
+# ----- judge models (version & access date are logged automatically at run time) -----
+judges:
+  - { id: "claude-opus-4-8",  family: "claude",  type: "closed", temperature_capable: false, min_interval_s: 2 }  # Opus 4.8: temperature deprecated -> excluded from C2. min_interval 2s to ease 529 overloaded.
+  - { id: "gpt-5.5",          family: "gpt",     type: "closed", temperature_capable: false }  # GPT-5.5: temperature=0 unsupported (default 1 only) -> excluded from C2.
+  - { id: "gemini-2.5-pro",   family: "gemini",  type: "closed", model: "gemini-2.5-pro", temperature_capable: true, min_interval_s: 1, daily_cap: 9800 }  # GA; temperature 0-1 supported (in C2). RPD-limited -> daily cap 9800 across days.
+  - { id: "qwen-3.5",         family: "qwen",    type: "open",   model: "Qwen/Qwen3.5-27B", temperature_capable: true,  self_host: true, min_interval_s: 0 }  # Qwen 3.5 27B dense (Apache-2.0). Self-hosted via vLLM>=0.17 (GDN), OpenAI-compatible, BF16 (native precision / reproducibility). Started via serve/ scripts; vLLM must be served under a --served-model-name equal to this 'model' value. Runs C1/C2/C3. Dense chosen over the 35B-A3B MoE (higher active-parameter judging quality; avoids expert-routing nondeterminism as a confound).
+
+# ----- experimental conditions -----
+conditions:
+  C1_repeat:
+    enabled: true
+    n_repeats: 10
+    temperature: 0.0
+    top_p: 1.0
+  C2_temperature:
+    enabled: true
+    grid: [0.0, 0.3, 0.7, 1.0]
+    n_repeats: 10
+    top_p: 1.0
+    skip_if_not_temperature_capable: true
+  C3_prompt:
+    enabled: true
+    prompt_variants: ["v1", "v2", "v3", "v4", "v5"]
+    temperature: 0.0
+    n_repeats: 10
+  C4_position:
+    enabled: false
+    n_repeats: 5
+
+# ----- rubric (anchors in prompts/) -----
+rubric:
+  scale: [1, 2, 3, 4, 5]
+  items:
+    - finding_completeness
+    - diagnostic_accuracy
+    - clarity_structure
+    - clinical_appropriateness
+    - overall_global_quality
+  primary_outcome: overall_global_quality
+
+# ----- output / parsing -----
+output:
+  format: "json"
+  schema: "schemas/score.schema.json"
+  max_parse_retries: 2
+  on_parse_failure: "record_and_flag"
+
+# ----- API call control -----
+api:
+  max_tokens: 4096      # headroom for reasoning tokens on thinking models
+  request_timeout_s: 120
+  max_retries: 8
+  backoff_base_s: 2
+  min_interval_s: 0      # min seconds between calls; raise to 1-3 if 429s are frequent
+  cache: true

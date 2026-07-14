@@ -1,0 +1,69 @@
+# ============ secrets / API keys (NEVER commit) ============
+.env
+*.env
+*.bat
+**/*api*key*
+**/*secret*
+
+# ============ internal / non-essential (not for public repo) ============
+PROJECT_STATUS.md
+experiment_coding_plan.md
+manuscript.md
+*_draft.md
+coauthor_*
+*.docx
+*.pdf
+*.bak
+config.*.yaml.bak
+files.zip
+zi1hJS9F
+serve/README_amd.md
+serve/README_vast.md
+serve/serve_qwen_amd.sh
+serve/run_qwen_amd.sh
+serve/collect_results.sh
+
+# ============ runs/: keep only the aggregated dataset ============
+runs/*
+!runs/scores.parquet
+# (excludes cache/, all *.log.jsonl, demo/smoke caches & logs, vllm_server.log)
+
+# ============ outputs/: regenerable tables & figures ============
+outputs/
+
+# ============ paper supplement (kept with the manuscript, not in code repo) ============
+supplementary_reproducibility.md
+
+# ============ python ============
+__pycache__/
+*.pyc
+.venv/
+venv/
+.python-version
+
+# ============ scratch / bundles / previews ============
+_preview*.png
+*_bundle.zip
+qwen_results*.zip
+backup_*.zip
+
+# ============ raw source dump (re-downloadable via dataset_builder) ============
+data/openi_reports/
+data/raw/
+data/perturbed/
+
+# ============ OS ============
+.DS_Store
+Thumbs.db
+
+# exclude self-hosting helpers entirely (documented in supplementary_reproducibility.md)
+serve/
+tools/merge_qwen_results.py
+
+# dev/pilot data subsets (final dataset = data/reports.jsonl + data/metadata.csv)
+data/_real5*
+data/reports_pilot.jsonl
+
+# dev/plotting helpers (not core to reproduction)
+src/analysis/make_figures.py
+src/smoke_test.py

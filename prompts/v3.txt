@@ -1,0 +1,17 @@
+# VARIANT v3 — Rephrasing / register (polite, verbose wording; meaning identical)
+# inject: {RUBRIC_BLOCK} = rubric_block.txt ; {REPORT} = report text
+# axis varied vs v1: instruction WORDING/register only (order, labels, few-shot identical to v1)
+
+Please take a moment to carefully assess the quality of the chest radiograph report provided below. We would be grateful if you could consider it thoughtfully.
+
+{RUBRIC_BLOCK}
+
+For each of the five items, kindly assign a rating from 1 to 5, where higher numbers indicate higher quality, following the descriptions above as closely as you can. Please judge overall_global_quality on its own, as a holistic impression rather than an arithmetic average of the preceding items.
+
+REPORT:
+\"\"\"
+{REPORT}
+\"\"\"
+
+When you are ready, please return only a single JSON object containing integer values for the following keys:
+finding_completeness, diagnostic_accuracy, clarity_structure, clinical_appropriateness, overall_global_quality
