@@ -3,7 +3,7 @@
 # All run parameters are frozen here; version-control every change via git.
 # =====================================================================
 
-seed: 20260622                 # global RNG seed (perturbation generation & sampling)
+seed: 20260622                 # dataset-construction RNG seed (report selection, 30:70 split, perturbation assignment & generation). NOT a model decoding seed.
 
 paths:
   raw_reports: "data/raw"
