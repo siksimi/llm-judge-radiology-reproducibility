@@ -7,3 +7,6 @@ SCORES: {"finding_completeness": 5, "diagnostic_accuracy": 5, "clarity_structure
 --- Example B (degraded) ---
 REPORT: "As can be appreciated upon careful review, no pleural effusion. There is a 6.4 cm nodule in the right lower lobe. The lungs are clear."
 SCORES: {"finding_completeness": 3, "diagnostic_accuracy": 2, "clarity_structure": 2, "clinical_appropriateness": 3, "overall_global_quality": 2}
+
+# 📝 TODO(임상): 위 예시 2건의 정답 점수(gold)는 교신저자 합의로 최종 고정.
+#     few-shot이 편향원이 되지 않도록 앵커와 일관된 채점이어야 함.

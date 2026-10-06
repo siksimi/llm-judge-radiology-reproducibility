@@ -17,7 +17,7 @@ A methodological **reproducibility study** of large language models (LLMs) used 
 **Judges:** Claude Opus 4.8 · GPT-5.5 · Gemini 2.5 Pro · **Qwen 3.5 (27B, dense; open-weight, self-hosted)**
 **Primary outcome:** ICC(2,1) / ICC(2,k) of `overall_global_quality`.
 
-## Key findings (32,000 evaluations; 100% parsing)
+## Key findings (32,000 evaluations; 31,995 valid scores, 99.98%)
 
 - Intra-judge reliability was excellent for all judges (ICC[2,1] 0.91–1.00), but only the **self-hosted open-weight judge was perfectly reproducible at temperature 0** (ICC = 1.000, CV = 0); commercial APIs varied run-to-run even at fixed settings (Gemini remained non-deterministic at temperature 0).
 - **Temperature inflated dispersion, not the mean** (within-report SD rose monotonically with T).
@@ -31,7 +31,7 @@ Full numbers, exact model snapshots/dates/parameters, and statistical definition
 ```
 config.yaml                     # all frozen run parameters (judges, conditions, seed)
 requirements.txt
-prompts/                        # system, rubric (+reversed), few-shot, v1–v5
+prompts/                        # system, rubric (+reversed), few-shot (exactly as transmitted; see ERRATA.md), v1–v5
 schemas/score.schema.json       # judge output schema (5 items, 1–5)
 src/
   perturbation_engine.py         # section-aware perturbations
@@ -42,7 +42,7 @@ src/
   analysis/                      # _common, reliability, variance, effects, intermodel, run_all
 data/reports.jsonl              # 100 perturbed reports (id, source, perturbation, text)
 data/metadata.csv               # per-report perturbation family/intensity/operations
-runs/scores.parquet             # aggregated per-call scores (32,000 rows)
+runs/scores.parquet             # per-call parsed scores (32,000 rows; parse_ok = False for 5)
 ```
 
 ## Reproduce
@@ -65,6 +65,10 @@ PYTHONPATH=src/analysis python src/analysis/run_all.py
 
 The provided `runs/scores.parquet` reproduces every table without re-running the models
 (`PYTHONPATH=src/analysis python src/analysis/run_all.py`).
+
+## Corrections
+
+Corrections to this repository are documented in [`ERRATA.md`](ERRATA.md) (2026-10-06: score table replaced, few-shot prompt file restored to the transmitted text, parsing rate corrected).
 
 ## Data & code availability
 
