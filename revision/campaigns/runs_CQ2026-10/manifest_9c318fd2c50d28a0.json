@@ -1,0 +1,29 @@
+{
+  "campaign": "CQ2026-10",
+  "judges": [
+    {
+      "id": "qwen-3.5",
+      "provider": "openai_compatible",
+      "model": "Qwen/Qwen3.5-27B",
+      "base_url": "http://localhost:18000/v1"
+    }
+  ],
+  "prompts": [
+    "v1"
+  ],
+  "runs": 10,
+  "temps": [
+    0.0
+  ],
+  "files": {
+    "config.yaml": "f8b3d77acbe08db99cd6c0575c90813d4197ee21b26f79684600172f8d99c0b4",
+    "reports.jsonl": "71a4f80bbf39e3702910764c74c6f01ca7c363e9a45022846194880acd793452",
+    "system.txt": "328a13e21f90ebf756fdc0343f665be2a3620694c258632c262f343ac565e721",
+    "rubric_block.txt": "ebd453418365f72e9ab8643120fff55f808c887e8722638877a0750576b80ab4",
+    "v1.txt": "0c094d9d9e7475902e7218b98c8113f83b83a5b051e77f7e0f2b3a0fe8f418dc",
+    "v5.txt": "0ba905f621ef42fbe428d495f21227d85f0ccc12a4ccf5362e45e72ea9cb3055",
+    "llm_client.py": "2519da95578e216d9679ece71de3a51dad7822c750e0c3c2e33bb3609fa89a11",
+    "run_campaign.py": "1dc3636d95ca5e70b2721a794f939cb9b2276e987ed693d88136a520e29e7c0b"
+  },
+  "manifest_hash": "9c318fd2c50d28a0"
+}

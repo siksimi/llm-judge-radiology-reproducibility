@@ -1,0 +1,9 @@
+EXAMPLES (worked, for calibration only — do not copy scores blindly):
+
+--- Example A (high quality) ---
+REPORT: "PA and lateral views of the chest. The cardiomediastinal silhouette is within normal limits. The lungs are well expanded and clear. No pneumothorax. The visualized osseous structures are unremarkable. Impression: No acute intrathoracic abnormality."
+SCORES: {"finding_completeness": 5, "diagnostic_accuracy": 5, "clarity_structure": 5, "clinical_appropriateness": 5, "overall_global_quality": 5}
+
+--- Example B (degraded) ---
+REPORT: "Chest. Heart normal. Lungs ok. Impression: Interval worsening compared with prior, correlate clinically."
+SCORES: {"finding_completeness": 2, "diagnostic_accuracy": 2, "clarity_structure": 3, "clinical_appropriateness": 2, "overall_global_quality": 2}

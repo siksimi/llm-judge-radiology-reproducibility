@@ -84,3 +84,7 @@ If you use this repository, please cite the accompanying paper (citation to be a
 ## License
 
 MIT for code (`LICENSE`). Aggregated data are shared within the license scope of the source datasets.
+
+## Revision materials
+
+Materials added for the first revision (October 2026) are in [`revision/`](revision/README.md). Corrections are listed in [`ERRATA.md`](ERRATA.md).

@@ -1,0 +1,73 @@
+﻿reader,form_no,code,Q1,Q2,Q3,Q2_branch_filled,Q3_branch_filled
+R1,1,P182,worse,1,yes,0,0
+R1,2,P702,no text change,not applicable,not applicable,0,0
+R1,3,P122,no difference,not applicable,yes,0,0
+R1,4,P534,no difference,not applicable,no,0,0
+R1,5,P646,worse,2,yes,0,0
+R1,6,P944,no difference,not applicable,yes,0,0
+R1,7,P116,no difference,not applicable,no,0,0
+R1,8,P579,no difference,not applicable,yes,0,0
+R1,9,P301,cannot assess,not applicable,yes,0,0
+R1,10,P529,no text change,not applicable,not applicable,0,0
+R1,11,P997,worse,1,yes,0,0
+R1,12,P485,worse,2,yes,0,0
+R1,13,P865,no difference,not applicable,yes,0,0
+R1,14,P454,no difference,not applicable,no,0,0
+R1,15,P908,no difference,not applicable,no,0,0
+R1,16,P839,worse,1,yes,0,0
+R1,17,P831,no text change,not applicable,not applicable,0,0
+R1,18,P992,no difference,not applicable,no,0,0
+R1,19,P387,worse,1,yes,0,0
+R1,20,P139,no text change,not applicable,not applicable,0,0
+R1,21,P118,worse,1,yes,0,0
+R1,22,P954,no difference,not applicable,yes,0,0
+R1,23,P535,no difference,not applicable,no,0,0
+R1,24,P232,no difference,not applicable,yes,0,0
+R1,25,P159,worse,2,yes,0,0
+R1,26,P476,no difference,not applicable,yes,0,0
+R1,27,P297,no difference,not applicable,no,0,0
+R1,28,P415,no difference,not applicable,no,0,0
+R1,29,P298,worse,1,yes,0,0
+R1,30,P838,worse,1,yes,0,0
+R1,31,P268,no difference,not applicable,yes,0,0
+R1,32,P358,no difference,not applicable,no,0,0
+R1,33,P626,worse,2,yes,0,0
+R1,34,P248,worse,2,yes,0,0
+R1,35,P115,worse,2,yes,0,0
+R1,36,P773,no difference,not applicable,yes,0,0
+R2,1,P529,no text change,not applicable,not applicable,1,1
+R2,2,P116,no difference,not applicable,no,1,0
+R2,3,P248,worse,3,no,0,0
+R2,4,P579,worse,1,yes,0,0
+R2,5,P159,worse,3,no,0,0
+R2,6,P773,cannot assess,not applicable,yes,1,0
+R2,7,P626,worse,3,no,0,0
+R2,8,P997,cannot assess,not applicable,yes,1,0
+R2,9,P301,cannot assess,not applicable,yes,1,0
+R2,10,P865,worse,1,yes,0,0
+R2,11,P139,no text change,not applicable,not applicable,1,1
+R2,12,P944,worse,1,yes,0,0
+R2,13,P535,no difference,not applicable,no,1,0
+R2,14,P534,no difference,not applicable,no,1,0
+R2,15,P908,no difference,not applicable,no,1,0
+R2,16,P954,cannot assess,not applicable,yes,1,0
+R2,17,P838,cannot assess,not applicable,yes,1,0
+R2,18,P182,worse,1,no,0,0
+R2,19,P702,no text change,not applicable,not applicable,1,1
+R2,20,P839,worse,3,no,0,0
+R2,21,P268,worse,1,yes,0,0
+R2,22,P232,worse,1,yes,0,0
+R2,23,P297,no difference,not applicable,no,1,0
+R2,24,P454,no difference,not applicable,no,1,0
+R2,25,P476,worse,1,yes,0,0
+R2,26,P831,no text change,not applicable,not applicable,1,1
+R2,27,P122,worse,1,yes,0,0
+R2,28,P485,worse,3,no,0,0
+R2,29,P118,worse,2,no,0,0
+R2,30,P992,no difference,not applicable,no,1,0
+R2,31,P358,no difference,not applicable,no,1,0
+R2,32,P646,worse,3,no,0,0
+R2,33,P415,no difference,not applicable,no,1,0
+R2,34,P115,worse,3,no,0,0
+R2,35,P387,worse,2,no,0,0
+R2,36,P298,worse,2,no,0,0

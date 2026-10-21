@@ -1,0 +1,9 @@
+EXAMPLES (worked, for calibration only — do not copy scores blindly):
+
+--- Example A (high quality) ---
+REPORT: "Frontal chest radiograph. The heart size is normal. The lungs are clear without focal consolidation, effusion, or pneumothorax. No acute osseous abnormality. Impression: No acute cardiopulmonary process."
+SCORES: {"finding_completeness": 5, "diagnostic_accuracy": 5, "clarity_structure": 5, "clinical_appropriateness": 5, "overall_global_quality": 5}
+
+--- Example B (degraded) ---
+REPORT: "As can be appreciated upon careful review, no pleural effusion. There is a 6.4 cm nodule in the right lower lobe. The lungs are clear."
+SCORES: {"finding_completeness": 3, "diagnostic_accuracy": 2, "clarity_structure": 2, "clinical_appropriateness": 3, "overall_global_quality": 2}

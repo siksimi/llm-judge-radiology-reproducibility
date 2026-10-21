@@ -1,0 +1,17 @@
+"judge","method","family","monotone_decline_point","beta_i1","beta_i2","beta_i3"
+"claude-opus-4-8","clm_report_level","finding_omission",FALSE,-1.74502831209538,-2.59139616081557,-2.59139616081557
+"claude-opus-4-8","clm_report_level","hallucinated_finding",FALSE,-6.39923443096988,-6.19051979919238,-6.79239381379347
+"claude-opus-4-8","clm_report_level","readability",FALSE,-0.833587515448044,-1.91404523991445,-1.71333093914799
+"claude-opus-4-8","clm_report_level","MODEL",NA,NA,NA,830
+"gpt-5.5","clm_report_level","finding_omission",FALSE,-0.312323936054238,-2.02612879295103,-1.57025555416086
+"gpt-5.5","clm_report_level","hallucinated_finding",FALSE,-3.62931517369085,-44.3091223936325,-24.546361987395
+"gpt-5.5","clm_report_level","readability",FALSE,-1.07353012969087,-1.57025555416086,-0.500455101433357
+"gpt-5.5","clm_report_level","MODEL",NA,NA,NA,830
+"gemini-2.5-pro","clm_report_level","finding_omission",FALSE,-1.00738383638833,-1.59214297507402,-1.57505445805347
+"gemini-2.5-pro","clm_report_level","hallucinated_finding",TRUE,-2.60163275155103,-4.11866006353639,-4.98470716494661
+"gemini-2.5-pro","clm_report_level","readability",FALSE,-0.568691196127083,-1.21626911834782,-1.11753276346623
+"gemini-2.5-pro","clm_report_level","MODEL",NA,NA,NA,830
+"qwen-3.5","clm_report_level","finding_omission",FALSE,-0.669726138984742,-2.66120469222952,-1.88945560076246
+"qwen-3.5","clm_report_level","hallucinated_finding",TRUE,-2.89521800082166,-3.38428459483956,-3.38428459483956
+"qwen-3.5","clm_report_level","readability",FALSE,-0.988980791241512,-2.71190937049742,-1.82123772417252
+"qwen-3.5","clm_report_level","MODEL",NA,NA,NA,830

@@ -1,0 +1,11 @@
+﻿code,reader,Q1,Q2,Q3,text_detectable_posthoc
+P301,R1,cannot assess,not applicable,yes,no (single mention)
+P301,R2,cannot assess,not applicable,yes,no (single mention)
+P773,R1,no difference,not applicable,yes,no (single mention)
+P773,R2,cannot assess,not applicable,yes,no (single mention)
+P838,R1,worse,1,yes,yes (left middle lobe: nonexistent)
+P838,R2,cannot assess,not applicable,yes,yes (left middle lobe: nonexistent)
+P954,R1,no difference,not applicable,yes,no (single mention)
+P954,R2,cannot assess,not applicable,yes,no (single mention)
+P997,R1,worse,1,yes,yes (Findings–Impression laterality conflict)
+P997,R2,cannot assess,not applicable,yes,yes (Findings–Impression laterality conflict)

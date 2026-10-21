@@ -1,0 +1,12 @@
+characteristic,pool,sample
+n_xml,3955,
+excluded_empty_or_placeholder,530,
+excluded_short,1,
+n,3424,100
+words_findings_impression,35 (26–48),34 (25–45)
+words_findings,29 (22–38),28 (21–36)
+impression_present,"(3418, 3424)","(100, 100)"
+indication_present,"(3370, 3424)","(97, 100)"
+comparison_recorded,"(1747, 3424)","(45, 100)"
+xxxx_masking,"(1610, 3424)","(50, 100)"
+mesh_major_normal,"(1206, 3424)","(35, 100)"

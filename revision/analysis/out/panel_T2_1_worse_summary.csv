@@ -1,0 +1,7 @@
+﻿family,n,both_worse,both_worse_ci,any_worse,any_worse_ci,both_no_text_change
+finding_omission,9,2,"(np.float64(0.06322510654056959), np.float64(0.5474110333077882))",9,"(np.float64(0.700854948272956), np.float64(1.0))",0
+hallucinated_finding,9,9,"(np.float64(0.700854948272956), np.float64(1.0))",9,"(np.float64(0.700854948272956), np.float64(1.0))",0
+laterality,5,0,"(np.float64(0.0), np.float64(0.43448246865939283))",2,"(np.float64(0.11762077314099711), np.float64(0.7692757205908813))",0
+noop,4,0,"(np.float64(0.0), np.float64(0.4898908403969213))",0,"(np.float64(0.0), np.float64(0.4898908403969213))",4
+readability,9,0,"(np.float64(-2.7755575615628914e-17), np.float64(0.299145051727044))",0,"(np.float64(-2.7755575615628914e-17), np.float64(0.299145051727044))",0
+ALL_changed_families,32,11,"(np.float64(0.20410437836619277), np.float64(0.5168891215602698))",20,"(np.float64(0.4525440722139633), np.float64(0.7706611278448665))",0

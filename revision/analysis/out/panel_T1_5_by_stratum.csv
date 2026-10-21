@@ -1,0 +1,13 @@
+﻿stratum,n,mean,ci,minv,maxv
+finding_omission_i1,3,4.0,"(np.float64(3.0), np.float64(4.5))",3.0,4.5
+finding_omission_i2,3,4.166666666666667,"(np.float64(3.0), np.float64(5.0))",3.0,5.0
+finding_omission_i3,3,3.6666666666666665,"(np.float64(3.0), np.float64(4.0))",3.0,4.0
+hallucinated_finding_i1,3,1.1666666666666667,"(np.float64(1.0), np.float64(1.5))",1.0,1.5
+hallucinated_finding_i2,3,1.8333333333333333,"(np.float64(1.0), np.float64(3.0))",1.0,3.0
+hallucinated_finding_i3,3,1.3333333333333333,"(np.float64(1.0), np.float64(1.5))",1.0,1.5
+laterality_changed,5,3.8,"(np.float64(2.8), np.float64(4.8))",2.0,5.0
+noop,4,4.75,"(np.float64(4.5), np.float64(5.0))",4.5,5.0
+original,12,4.416666666666667,"(np.float64(3.9583333333333335), np.float64(4.791666666666667))",3.0,5.0
+readability_i1,3,4.166666666666667,"(np.float64(4.0), np.float64(4.5))",4.0,4.5
+readability_i2,3,3.8333333333333335,"(np.float64(3.5), np.float64(4.0))",3.5,4.0
+readability_i3,3,3.5,"(np.float64(3.5), np.float64(3.5))",3.5,3.5

@@ -1,0 +1,11 @@
+﻿family,reader,n,yes,no,cannot assess,not applicable
+finding_omission,R1,9,9,0,0,0
+finding_omission,R2,9,7,2,0,0
+hallucinated_finding,R1,9,9,0,0,0
+hallucinated_finding,R2,9,0,9,0,0
+laterality,R1,5,5,0,0,0
+laterality,R2,5,5,0,0,0
+noop,R1,4,0,0,0,4
+noop,R2,4,0,0,0,4
+readability,R1,9,0,9,0,0
+readability,R2,9,0,9,0,0
